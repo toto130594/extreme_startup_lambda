@@ -17,3 +17,5 @@ target
 
 # Serverless directories
 .serverless
+
+!gradle-wrapper.jar
