@@ -8,6 +8,7 @@
 target
 .java-version
 /node_modules
+.idea/
 
 # Package Files
 *.jar
