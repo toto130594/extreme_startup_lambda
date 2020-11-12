@@ -30,6 +30,7 @@ jobs:
 
   deploy:
     name: deploy
+    needs: build
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -41,7 +42,9 @@ jobs:
     - uses: actions/download-artifact@master
       with:
         name: my-artifact
-        path: path/to/artifact
+        path: build/distributions
+
+    - run: ls build/distributions
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
