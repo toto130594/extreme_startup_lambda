@@ -5,7 +5,7 @@ frameworkVersion: ">=2.0.0"
 provider:
   name: aws
   runtime: java8
-  region: us-east-2
+  region: us-east-1
   
 package:
   artifact: build/distributions/aws-java-simple-http-endpoint.zip
