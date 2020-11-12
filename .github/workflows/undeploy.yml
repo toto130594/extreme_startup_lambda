@@ -1,4 +1,4 @@
-name: extreme_startup_lambda_pipeline
+name: undeploy_extreme_startup_lambda_pipeline
 
 on:
   workflow_dispatch:
@@ -21,6 +21,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+
       - run: npm i serverless-offline
 
       - name: serverless deploy

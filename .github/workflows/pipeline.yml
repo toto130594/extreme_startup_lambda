@@ -48,6 +48,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    - run: npm i serverless-offline
+
     - name: serverless deploy
       uses: serverless/github-action@master
       with:
