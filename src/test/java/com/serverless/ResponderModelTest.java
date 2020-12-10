@@ -9,10 +9,10 @@ public class ResponderModelTest {
     public void CuandopreguntePorElNombrerespondeEquipo2(){
         ResponderModel responderModel = new ResponderModel();
         //Arrange
-        String pregunta = "07a05250: what is your name";
+        String pregunta = "dae244e0: which of the following numbers is the largest: 522, 38";
         //Act
         String respuesta = responderModel.answer(pregunta);
         //Assert
-        assertThat(respuesta).isEqualTo("Equipo 2");
+        assertThat(respuesta).isEqualTo("522");
     }
 }
