@@ -4,10 +4,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ResponderModel {
-    private final String teamName = "devco";
+    private final String teamName = "Equipo 2";
 
     public String answer(String question) {
-        if ("".equals(question)){
+        Matcher nameMatcher = Pattern.compile(".*what is your name").matcher(question);
+        if (nameMatcher.matches()) {
             return teamName;
         }
 
@@ -16,7 +17,7 @@ public class ResponderModel {
             return String.valueOf(Integer.parseInt(sumMatcher.group(1)) + Integer.parseInt(sumMatcher.group(2)));
         }
         
-        return teamName;
+        return "";
     }
 
 }
