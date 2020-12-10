@@ -20,10 +20,10 @@ public class ResponderModelTest {
     public void CuandopreguntePorQuienesMayorrespondeEquipo2(){
         ResponderModel responderModel = new ResponderModel();
         //Arrange
-        String pregunta = "6cb3ab00: which of the following numbers is the largest: 437, 85";
+        String pregunta = "6cb3ab00: which of the following numbers is the largest: 177, 17";
         //Act
         String respuesta = responderModel.answer(pregunta);
         //Assert
-        assertThat(respuesta).isEqualTo("437");
+        assertThat(respuesta).isEqualTo("177");
     }
 }
